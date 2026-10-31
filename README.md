@@ -141,7 +141,7 @@ Changes made to this repo relative to upstream Quartz:
 
 | File | Change |
 |---|---|
-| `quartz.config.ts` | `pageTitle`, `baseUrl`, `ExplicitPublish` added to `filters` |
+| `quartz.config.ts` | `pageTitle`, `baseUrl`, `ExplicitPublish` added to `filters`, `prettyLinks: false` in `CrawlLinks` (it cut link text to the part after the last `/`, so "Redis pub/sub" showed as "sub") |
 | `.github/workflows/` | Quartz's own workflows (`ci`, `build-preview`, `deploy-preview`, `docker-build-push`) removed; `deploy.yml` added |
 | `.github/dependabot.yml` | npm updates removed, only `github-actions` kept |
 | `content/.gitkeep` | Removed; `content` is a local symlink or a CI clone |
