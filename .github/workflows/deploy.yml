@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Load deploy key for the notes repo
         uses: webfactory/ssh-agent@v0.10.0
@@ -31,7 +31,7 @@ jobs:
         run: git clone --depth 1 git@github.com:Cahersan/digital-garden-notes.git content
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 22
 
